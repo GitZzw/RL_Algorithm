@@ -1,9 +1,12 @@
 # Reinforcement Learning
 
-Repository dedicated to the implementation of several Reinforcement Learning methods in Python, exemplified by OpenAI environments. Some performance comparisons are included.
+### 课程资料
+链接：https://pan.baidu.com/s/1q6-9oEo_c4LpzvYiPaTRdg 
+提取码：t8mo 
+复制这段内容后打开百度网盘手机App，操作更方便哦--来自百度网盘超级会员V4的分享
 
-Most implementations are based on David Silver's UCL RL course and Sutton and Barto's book Reinforcement Learning: an Introduction.
 
+### Forked from 
 Currently implemented:
 * agentTabular.py: Tabular action value methods.
   * SARSA
@@ -39,10 +42,3 @@ Currently implemented:
 Several classes and functions required for the above files are contained in util.py. 
 
 The environment file gridworld.py might be required for some examples and comparisons.
-
-Sources used:
- * David Silver (2015), COMPM050/COMPGI13 Lectures.
- * Sutton and Barto (2012), Reinforcement Learning: an Introduction.
- * Csaba Szepesvari (2009), Algorithms for Reinforcement Learning.
- * Daniel Takeshi (2016), Going Deeper Into Reinforcement Learning: Understanding Q-Learning and Linear Function Approximation.
- * David Silver, Richard Sutton and Martin Muller (2012).
