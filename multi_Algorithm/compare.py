@@ -365,6 +365,9 @@ def compareMethods():
     # Benchmark agents without training
     for agent_i in range(2): benchmark_data[agent_i][0] = agents[agent_i].benchmark(eps_benchmark)
     # Train and benchmark agents
+
+    plt.figure(figsize=(10, 5))
+    plt.ion()
     for point_i in range(1, n_plot_points):
         # for agent_i in range(2):
         #     print('Dyna ' + str(agent_i) + ', Episode ' + str((point_i+1)*eps_per_point))
@@ -393,17 +396,19 @@ def compareMethods():
     #     plt.title(titles[i])
     # plt.show()
         # Plot results
-        plt.figure(figsize=(16, 10))
+        plt.clf()  # 清除之前画的图
+        fig = plt.gcf()  # 获取当前图
         xaxis = [eps_per_point*(i+1) for i in range(n_plot_points)]
         title1 = 'DynaQ'
         title4 = 'Dyna2'
         titles = [title1, title4]
         for i in range(2):
-            plt.subplot(221+i)
+            plt.subplot(121+i)
             plt.plot(xaxis, benchmark_data[i])
             plt.xlabel('Training episodes')
             plt.ylabel('Average reward per episode')
             plt.title(titles[i])
-        plt.show()
-
+        plt.pause(0.001)  # 暂停一段时间，不然画的太快会卡住显示不出来
+        plt.ioff()  # 关闭画图窗口Z
+    plt.show()
 compareMethods()
