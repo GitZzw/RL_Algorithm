@@ -8,3 +8,6 @@
 
 ### Forked from https://github.com/RicardoDominguez/RL-Intro
 
+### code中
+运行compare_error.py显示误差对比迭代曲线
+运行compare_visual.py显示迷宫环境中对比
